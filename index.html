@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		.btnup{
+			text-align: center;
+			padding: 10px;
+			width: 150px;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.btnwrap{
+			position: relative;
+  			overflow: hidden;
+  			display: inline-block;
+		}
+
+		.btn {
+		  border: 2px solid gray;
+		  color: gray;
+		  background-color: white;
+		  padding: 8px 20px;
+		  border-radius: 8px;
+		  font-size: 25px;
+		  font-weight: bold;
+		  width: 260px;
+		}
+		.btnwrap input[type=file] {
+		  font-size: 100px;
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  opacity: 0;
+		}
+	</style>
+</head>
+<body>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+	<h1>Input File Gambar</h1>
+	<div class="btnwrap">
+		<button class="btn">Upload a file</button>
+		<input class="btnin" type="file" name="upload" multiple="multiple">
+	</div>
+	<br>
+	<input class="btnup" type="submit" value="Upload"> 
+	
+</form>
+</body>
+</html>

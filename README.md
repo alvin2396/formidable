@@ -1,2 +1,2 @@
 # formidable
-trying to upload file using formidable and combine with lightbox.js
+Simple scripts with formidable and featuring lightbox.js
