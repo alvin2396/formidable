@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title= 'List'
+    link(
+      rel= 'stylesheet'
+      type= 'text/css'
+      href= 'assets/css/custom.css'
+    )
+    script(
+      type="text/javascript"
+      src="assets/js/custom.js"
+    )
+  body
+    div.box.header
+      h2= 'Simple Formidable Application'
+      h5= 'Simple scripts with formidable featuring lightbox.js'
+
+    div.box
+      h4(style={margin: '10px 30px'})= "Upload Photo :"
+      hr
+      form(action="/" method="post" enctype="multipart/form-data" style={margin:'30px'})
+        br
+        input(type="file" name="upload" multiple="multiple" style={width:'50%', 'min-width':'120px'})
+        input.btn(type="submit" value="Upload")
+
+    div.box(style={padding:'0'})
+      h4(style={margin: '10px 30px'})= "Image List :"
+      hr
+      iframe#listImage(src='/list' style={width:'100%', border:'0'} onload='iframeLoaded()')

@@ -1,5 +1,5 @@
 {
-  "name": "formidable_test",
+  "name": "simple_formidable",
   "version": "1.0.0",
   "description": "Simple scripts with formidable featuring lightbox.js",
   "main": "app.js",
@@ -14,6 +14,7 @@
     "fs-extra": "^3.0.1",
     "http": "0.0.0",
     "nodemon": "^1.11.0",
+    "pug": "^2.0.0-rc.2",
     "util": "^0.10.3"
   },
   "devDependencies": {},

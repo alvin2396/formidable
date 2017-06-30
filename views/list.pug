@@ -1,0 +1,33 @@
+doctype html
+html
+head
+    link(
+      rel= "stylesheet"
+      type= "text/css"
+      href= "assets/css/lightbox.min.css"
+    )
+    script(
+      type="text/javascript"
+      src="assets/js/lightbox-plus-jquery.js"
+    )
+    style.
+      .imgcontainer {
+        margin:0px 30px;
+      }
+      .imgcontainer img {
+        width:200px;
+      }
+body
+  div.imgcontainer
+    each imgname in arrImg
+      a(
+        class="example-image-link"
+        href="/uploaded_images/" + imgname
+        data-lightbox="example-set"
+        data-title= imgname
+        )
+          img(
+            class="example-image"
+            src="/uploaded_images/" + imgname
+            alt=""
+          )
