@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title= 'List'
+    title= 'Simple Formidable Application'
     link(
       rel= 'stylesheet'
       type= 'text/css'
@@ -21,7 +21,7 @@ html
       hr
       form(action="/" method="post" enctype="multipart/form-data" style={margin:'30px'})
         br
-        input(type="file" name="upload" multiple="multiple" style={width:'50%', 'min-width':'120px'})
+        input(type="file" name="upload" multiple="multiple" Required="Required" style={width:'50%', 'min-width':'120px'})
         input.btn(type="submit" value="Upload")
 
     div.box(style={padding:'0'})

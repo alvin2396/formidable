@@ -81,4 +81,6 @@ app.get('/list', function (req, res){
 /*==================================================
  * Running Application on PORT 8123
  */
-app.listen(8123);
+app.listen(8123, function() {
+	console.log("Running at port 8123")
+});
